@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人电子名片</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+        body {
+            background: #eef2f7;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .business-card {
+            width: 380px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 35px 28px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .business-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+        .avatar-circle {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3671e9, #60a5fa);
+            color: white;
+            font-size: 42px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 18px;
+        }
+        .name-text {
+            font-size: 26px;
+            color: #1f2937;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .position-text {
+            font-size: 16px;
+            color: #6b7280;
+            margin-bottom: 24px;
+        }
+        .line {
+            width: 90px;
+            height: 2px;
+            background-color: #3671e9;
+            margin: 0 auto 24px;
+        }
+        .contact-item {
+            margin: 12px 0;
+            font-size: 15px;
+            color: #374151;
+        }
+        .contact-item a {
+            color: #3671e9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <div class="avatar-circle">李</div>
+        <div class="name-text">李明</div>
+        <div class="position-text">后端开发工程师</div>
+        <div class="line"></div>
+        <div class="contact-item">📞 电话：139-1234-5678</div>
+        <div class="contact-item">✉️ 邮箱：liming@demo.com</div>
+        <div class="contact-item">🌐 个人网站：<a href="shturl.cc/noLfR" target="_blank">liming-web.com</a></div>
+        <div class="contact-item">📍 地点：四川成都</div>
+    </div>
+</body>
+</html>
+
